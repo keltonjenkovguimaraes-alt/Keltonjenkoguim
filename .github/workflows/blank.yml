@@ -16,6 +16,22 @@ install.packages("dplyr")
 
 devtools::install_github("username/repository")
 
+                            # Use different aproaches suited to your files 
+
+                            #library(rtracklayer)
+
+              # Read GFF/GTF
+              #gff_data <- import("annotation.gff")
+              #gtf_data <- import("annotation.gtf")
+
+              # Read GBFF (requires different approach)
+              #library(genbankr)
+              #gbff_data <- readGenBank("sequence.gbff")
+
+              # Or read GBFF as text and parse
+              #gb_lines <- readLines("sequence.gbff")
+
+
 
                             # This will return the package path if installed, or error if not
 tryCatch({
