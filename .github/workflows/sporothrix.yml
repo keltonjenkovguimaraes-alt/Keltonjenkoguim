@@ -1,9 +1,18 @@
-                             # Load required packages
+ # Load required packages for genomic analysis of assembled genomes as long as they possess .GFF and GFT files
+ # Specific packages for exploratory genomic analysis e.g.
+ # Basic genome statistics
+ # Visualize genome comparisons
+ # Gene content analysis
+ # Synteny analysis preparation <<<<<>>>>> Generally this kind of analysis requires multiple contigs or chromossomes and blast results
+ # Phylogenetics analysis 
+ # Virulence factors search as well as other gene products (self criteria)
+
+                      
 library(Biostrings)
 library(rtracklayer)
 library("genoPlotR")
 library("ape")
-library(ggplot2)
+library(ggplot2)                        #Check out manual for an array of plots
 library(dplyr)
                              # aditional packages 
 
@@ -43,13 +52,14 @@ tryCatch({
 
 
                              # Create project directory structure
-dir.create("Sporothrix_spp")
-setwd("C:/Users/kelto/Downloads/Sporothrix spp/sporothrixspp")
+dir.create("Sporothrix_spp")  # your own
+setwd("")                     # your own
 dir.create("results")
 dir.create("plots")
                               #List files in wd
 
-list.files("C:/Users/kelto/Downloads/Sporothrix spp/sporothrixspp")
+list.files("C:/Users/kelto/Downloads/Sporothrix spp/sporothrixspp") #file inside files to be listed and readed
+
 
 
                              # Read genome sequences
