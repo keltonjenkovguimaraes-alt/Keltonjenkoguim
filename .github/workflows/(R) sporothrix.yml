@@ -1,11 +1,11 @@
  # Load required packages for genomic analysis of assembled genomes as long as they possess .GFF and GFT files
- # Specific packages for exploratory genomic analysis e.g.
- # Basic genome statistics
- # Visualize genome comparisons
- # Gene content analysis
- # Synteny analysis preparation <<<<<>>>>> Generally this kind of analysis requires multiple contigs or chromossomes and blast results
- # Phylogenetics analysis 
- # Virulence factors search as well as other gene products (self criteria)
+   # Specific packages for exploratory genomic analysis e.g.
+   # Basic genome statistics
+   # Visualize genome comparisons
+   # Gene content analysis
+   # Synteny analysis preparation <<<<<>>>>> Generally this kind of analysis requires multiple contigs or chromossomes and blast results
+   # Phylogenetics analysis 
+   # Virulence factors search as well as other gene products (self criteria)
 
                       
 library(Biostrings)
